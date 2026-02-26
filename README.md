@@ -5,6 +5,7 @@ When you want to clone all repositories of multiple people immediately.
 ### REQUIREMENTS
 1. Python 3.12.3
 2. `pip install -r requirements.txt` (python-dotenv is optional)
+3. git
 
 ### Setup
 1. Go to https://github.com/settings/personal-access-tokens/new
