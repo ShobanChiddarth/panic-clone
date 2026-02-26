@@ -3,9 +3,10 @@ import os
 import subprocess
 import requests
 from urllib.parse import urljoin
-from dotenv import load_dotenv
 import json
 
+from dotenv import load_dotenv
+load_dotenv()
 
 usernames = input("Enter GitHub usernames separated by space: ").split()
 save_path = input("Enter dir path to save all repos (mass_clone_output): ") or "mass_clone_output"
@@ -19,7 +20,6 @@ except Exception:
 if not usernames:
     sys.exit(1)
 
-load_dotenv()
 
 GITHUB_API_BASE_URL = "https://api.github.com"
 
